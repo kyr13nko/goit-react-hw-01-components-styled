@@ -1,4 +1,6 @@
-.item {
+import { styled } from 'styled-components';
+
+export const Item = styled.li`
   display: flex;
   align-items: center;
   gap: 12px;
@@ -16,28 +18,21 @@
   overflow: hidden;
 
   padding: 8px 12px;
-}
+`;
 
-.online {
+export const Status = styled.span`
   width: 16px;
   height: 16px;
 
-  background-color: green;
+  background-color: ${({ $isOnline }) => ($isOnline ? '#008000' : '#ff0000')};
   border-radius: 50%;
-}
+`;
 
-.offline {
-  width: 16px;
-  height: 16px;
-
-  background-color: red;
-  border-radius: 50%;
-}
-
-.avatar {
+export const Avatar = styled.img`
+  width: 64px;
   border-radius: 4px;
-}
+`;
 
-.name {
+export const Name = styled.p`
   font-size: 24px;
-}
+`;

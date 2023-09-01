@@ -1,4 +1,6 @@
-.profile {
+import { styled } from 'styled-components';
+
+export const Card = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -16,46 +18,47 @@
   overflow: hidden;
 
   margin-top: 20px;
-}
+`;
 
-.description {
+export const Description = styled.div`
   display: flex;
   flex-direction: column;
 
   padding: 40px;
-}
+`;
 
-.avatar {
+export const Avatar = styled.img`
   width: 100px;
+
   align-self: center;
 
   border-radius: 50%;
 
   margin-bottom: 40px;
-}
+`;
 
-.name {
+export const Name = styled.p`
   font-size: 24px;
   font-weight: 700;
 
   margin-bottom: 10px;
-}
+`;
 
-.tag {
+export const Tag = styled.p`
   color: grey;
 
   margin-bottom: 10px;
-}
+`;
 
-.location {
+export const Location = styled.p`
   color: grey;
-}
+`;
 
-.stats {
+export const Stats = styled.p`
   display: flex;
-}
+`;
 
-.item {
+export const Item = styled.li`
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -66,16 +69,14 @@
   box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
 
   padding: 20px 16px;
-}
+`;
 
-.label {
+export const Label = styled.span`
   font-size: 12px;
   color: grey;
+`;
 
-  /* margin-bottom: 4px; */
-}
-
-.quantity {
+export const Quantity = styled.span`
   font-size: 16px;
   font-weight: 700;
-}
+`;
